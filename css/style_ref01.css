@@ -1,0 +1,1500 @@
+/* ここから下に記載していく */
+html{
+    scroll-padding-top: 164px;
+    scroll-behavior: smooth;
+    background-color:rgb(252, 252, 252);
+}
+
+.all{
+    width: 1200px;
+    margin-top: 124px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #222222;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2{
+    text-align: center;
+    font-size: 18px;
+}
+
+p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+a{
+    text-decoration: none;
+    color:#222222   
+}
+
+/* #about{
+    margin-top: -124px;
+    padding-top: 164px;
+}
+
+#course{
+    margin-top: -124px;
+    padding-top: 164px;
+}
+
+#news{
+    margin-top: -124px;
+    padding-top: 164px;
+}
+
+#access{
+    margin-top: -124px;
+    padding-top: 164px;
+}
+
+#contact{
+    margin-top: -124px;
+    padding-top: 164px;
+} */
+
+/* ヘッダー部分 */
+
+.box01{
+    display: flex;
+    justify-content: center;
+    border: solid #cacaca 1px;
+    z-index: 100;
+
+    background-color: whitesmoke;
+    position: fixed;
+    width: 1198px;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+    
+}
+
+.box01 .left{
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.box01 .right{
+    display: flex;
+    justify-content: center;
+}
+
+.box01 .imgbox{
+    width: 385px;
+    height: 80px;   
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.box01 p{
+    margin: 50px 25px;
+    font-size: 21px;
+
+}
+
+/* メイン写真 */
+
+.box02{
+    width: 100%;
+    height: 450px;
+    background: url(../img/mainbg.png) no-repeat center center /cover;
+    margin: 0 auto;
+
+    position: relative;
+
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.box02 .inner{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+
+    width: 1200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.box02 .title{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: white;
+}
+
+.box02 .txt{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+
+}
+
+/* ABOUT */
+
+.box03{
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.box03 h1{
+    color: #ffd61a;
+
+}
+
+.box03 h2{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.box03 p{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* 写真４枚 */
+/* jQueryで効果をつけたので、box04はお蔵入り */
+
+.box04{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+/* .box04 .imgbox01{
+    width: 220px;
+}
+
+.box04 .imgbox02{
+    width: 380px;
+}
+
+.box04 .imgbox03{
+    width: 340px;
+}
+
+.box04 .imgbox04{
+    width: 260px;
+}
+.box04 img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+} */
+
+/* COURSE */
+
+.box05{
+    margin: 60px auto 60px auto;
+}
+
+.box05 h1{
+    margin-bottom: 30px;
+}
+
+/* 写真と説明　横並び×3 */
+
+.box06{
+    width: 1200px;
+    height: 460px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fafafa;
+}
+
+.box06 .left{
+    background: url(../img/course_01.jpg) no-repeat center center /cover;
+    width: 600px;
+    height: 460px;
+}
+
+.box06 .right{
+    width: 600px;
+    height: 460px;
+
+    position: relative;
+}
+
+.box06 .inner{
+    width: 430px;
+    margin-left: 50px;
+    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.box06 h1{
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.box06 p{
+    text-align: left;
+}
+
+
+.box07{
+    width: 1200px;
+    height: 460px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fafafa;
+
+
+}
+
+.box07 .left{
+    width: 600px;
+    height: 460px;
+    position: relative;
+}
+
+.box07 .inner{
+    width: 430px;
+    margin-left: 120px;
+    margin-right: 50px;
+    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.box07 h1{
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.box07 p{
+    text-align: left;
+}
+.box07 .right{
+    background: url(../img/course_02.jpg) no-repeat center center /cover;
+    width: 600px;
+    height: 460px;
+}
+
+/* .box08{
+    width: 1200px;
+    height: 460px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fafafa;
+} */
+
+.box06 .left2{
+    background: url(../img/course_03.jpg) no-repeat center center /cover;
+    width: 600px;
+    height: 460px;
+}
+
+/* NEWS */
+
+.box09{
+    margin: 60px auto 60px auto;
+}
+
+.box09 h1{
+    color: #ffd61a;
+    margin-bottom: 30px;
+}
+
+
+/* ニュース画像 */
+
+.box10{
+    width: 960px;
+    /* height: 400px; */
+    /* border: solid black 1px; */
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.box10 .nbox{
+    width: 300px;
+    /* height: 400px; */
+    /* border: solid red 1px; */
+}
+
+.box10 .nbox .tp{
+    width: 300px;
+    height: 200px;
+}
+
+.box10 .nbox .btm{
+    margin-top: 30px;
+
+}
+
+.box10 h3{
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.box10 p{
+    text-align:  left;
+}
+
+/* Moreボタン */
+
+.box11{
+    width: 300px;
+    height: 60px;
+
+    margin: 60px auto;
+    background-color: #ffd61a;
+
+    border: none;
+    color: #fafafa;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box11:hover{
+    background-color: #9c9200;
+}
+
+.box11:active{
+    transform: translateY(2%);
+    color:#9c9200;
+    font-size: 0px;
+}
+
+.box11 h2{
+    color: #fafafa;
+}
+
+
+.box12{
+    background-color: #fafafa;
+}
+
+/* .gray20{
+    height: 20px;
+} */
+
+.gray60{
+    /* width: 1200px; */
+    height: 60px;
+}
+
+.gray30{
+    height: 30px;
+}
+
+.map{
+    height: 300px;
+    background-color: greenyellow;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.map iframe{
+    position: absolute;
+    top:-50%;
+}
+
+.box12 .prop p{
+    text-align: left;
+}
+.box12 .prop{
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box13{
+    margin-top: 60px;
+    margin-bottom: 70px;
+
+}
+
+/* form部分 */
+
+.box14{
+    width: 640px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.box14 .fbox{
+    width: 640px;
+    border-bottom: solid 2px #bfbfbf;
+
+    display: flex;
+    justify-content: center;
+}
+
+.box14 .left{
+    width: 240px;
+    border-right: solid 1px #bfbfbf;
+    
+}
+
+.box14 .right{
+    width: 400px;
+}
+
+.left .h54{
+    height: 54px;
+    border-top: solid #bfbfbf 1px;
+    /* position: relative; */
+}
+
+.right .h54{
+    height: 54px;
+    border-top: solid #bfbfbf 1px;
+}
+
+
+.left .h100{
+    height: 54px;
+}
+
+.right .h100{
+    height: 100px;
+    border-top: solid #bfbfbf 1px;
+}
+
+.left .h150{
+    height: 128px;
+}
+
+.right .h150{
+    height: 182px;
+    border-top: solid #bfbfbf 1px;
+}
+
+.right .cb{
+    margin-left: 8px;
+    margin-top: 15px;
+    margin-bottom: 24px;
+}
+.h54 p{
+    text-align: left;
+    margin-left: 16px;
+    line-height: 20px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.box14 .itxt{
+    width: 328px;
+    height: 36px;
+    border: solid 1px #bfbfbf;
+
+    margin-top: 8px;
+    margin-left: 8px;
+    padding: 0px;
+}
+
+label{
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+select{
+    font-size: 16px;
+}
+
+.fbox input{
+    font-size: 14px;
+}
+
+.box14 .idetail{
+    width: 328px;
+    height: 90px;
+    resize: none;
+    padding: 0px;
+    border:solid 1px #bfbfbf;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+/* 送信ボタン */
+
+
+
+
+
+.box15{
+    margin-top: 140px;
+    background-color: #707070;
+}
+
+.box15 p{
+    color: #fafafa;
+}
+
+
+
+/* subページ */
+/* .main{
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+.box21{
+    width: 100%;
+    height: 100%;
+    background: url(../img/mainbg.png) no-repeat center center /cover;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.box21 .leftup{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+    width: 420px;
+    height: 100px;
+
+    background-color: #fff;
+    border-radius: 2%;
+    border: solid black 2px;
+
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    /* animation-delay: 1s; */
+}
+
+.leftup img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+
+    width: 90%;
+    height: 80%;
+
+}
+
+.box21 .inner{
+    position: absolute;
+    top: 70%;
+    right: 60px;
+    
+    width: 520px;
+
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+  80%,100% {
+    opacity: 1;
+  }
+} 
+
+.box21 .title{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%,-50%); */
+
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Shippori Mincho', serif;
+    line-height: 80px;
+
+    font-weight: bold;
+    font-style: italic;
+
+    text-shadow:  1px  1px 0px black ,
+                -1px  1px 0px black ,
+                1px -1px 0px black ,
+                -1px -1px 0px black; 
+    
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.box21 .txt{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-family: 'Shippori Mincho', serif;
+    font-style: italic;
+    text-shadow:  1px  1px 0px black ,
+                -1px  1px 0px black ,
+                1px -1px 0px black ,
+                -1px -1px 0px black; 
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+
+
+
+
+.box22{
+    width: 100%;
+    height: 100%;
+    background: url(../img/about_03.jpg) no-repeat center center /cover;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.box22 h1{
+    color: #ffd61a;
+    text-align: left;
+    font-size: 30px;
+
+    font-family: 'Shippori Mincho', serif;
+    font-style: italic;
+    text-shadow:  1px  1px 0px black ,
+                -1px  1px 0px black ,
+                1px -1px 0px black ,
+                -1px -1px 0px black; 
+
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.box22 h2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    text-align: left;
+    font-size: 24px;
+    color: white;
+    font-family: 'Shippori Mincho', serif;
+    font-style: italic;
+    text-shadow:  1px  1px 0px black ,
+                -1px  1px 0px black ,
+                1px -1px 0px black ,
+                -1px -1px 0px black; 
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.box22 p{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    font-family: 'Shippori Mincho', serif;
+    font-style: italic;
+    text-shadow:  1px  1px 0px black ,
+                -1px  1px 0px black ,
+                1px -1px 0px black ,
+                -1px -1px 0px black; 
+
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.box22 .left{
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+
+}
+
+.box23{
+    width: 100%;
+    height: 100%;
+    background: url(../img/course_01.jpg) no-repeat center center /cover;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.box23 .inner{
+    position: absolute;
+    bottom:5%;
+    right:60px;
+
+}
+
+.box23 h1{
+    color: #ffd61a;
+    text-align: left;
+    font-size: 30px;
+
+    font-family: 'Shippori Mincho', serif;
+    font-style: italic;
+    text-shadow:  1px  1px 0px black ,
+                -1px  1px 0px black ,
+                1px -1px 0px black ,
+                -1px -1px 0px black; 
+
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.box23 h2{
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+    text-align: left;
+    font-size: 24px;
+    color: white;
+    font-family: 'Shippori Mincho', serif;
+    font-style: italic;
+    text-shadow:  1px  1px 0px black ,
+                -1px  1px 0px black ,
+                1px -1px 0px black ,
+                -1px -1px 0px black; 
+
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.box23 p{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    font-family: 'Shippori Mincho', serif;
+    font-style: italic;
+    text-shadow:  1px  1px 0px black ,
+                -1px  1px 0px black ,
+                1px -1px 0px black ,
+                -1px -1px 0px black; 
+
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.box24{
+    width: 100%;
+    height: 100%;
+    background: url(../img/course_02.jpg) no-repeat center center /cover;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.box24 .inner{
+    position: absolute;
+    top:5%;
+    right:60px;
+
+}
+
+.box24 h2{
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+    text-align: left;
+    font-size: 24px;
+    color: white;
+    font-family: 'Shippori Mincho', serif;
+    font-style: italic;
+    text-shadow:  1px  1px 0px black ,
+                -1px  1px 0px black ,
+                1px -1px 0px black ,
+                -1px -1px 0px black; 
+
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.box24 p{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    font-family: 'Shippori Mincho', serif;
+    font-style: italic;
+    text-shadow:  1px  1px 0px black ,
+                -1px  1px 0px black ,
+                1px -1px 0px black ,
+                -1px -1px 0px black; 
+
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.box25{
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+}
+
+.box25 h1{
+    color: #ffd61a;
+    text-align: center;
+    font-size: 30px;
+
+    font-family: 'Shippori Mincho', serif;
+    font-style: italic;
+    text-shadow:  1px  1px 0px black ,
+                -1px  1px 0px black ,
+                1px -1px 0px black ,
+                -1px -1px 0px black; 
+
+
+}
+
+.box25 p{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    font-family: 'Shippori Mincho', serif;
+    font-style: italic;
+    text-shadow:  1px  1px 0px black ,
+                -1px  1px 0px black ,
+                1px -1px 0px black ,
+                -1px -1px 0px black; 
+}
+
+.box26{
+    width: 300px;
+    height: 50px;
+
+    margin: 10px auto;
+    background-color: #ffd61a;
+
+    border: none;
+    color: #fafafa;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-shadow:  1px  1px 0px rgb(124, 124, 124) ,
+                -1px  1px 0px rgb(124, 124, 124) ,
+                1px -1px 0px rgb(124, 124, 124) ,
+                -1px -1px 0px rgb(124, 124, 124); 
+}
+
+.box26:hover{
+    background-color: #9c9200;
+}
+
+.box26:active{
+    transform: translateY(2%);
+    color:#9c9200;
+    font-size: 0px;
+}
+
+.box26 h2{
+    color: #fafafa;
+}
+
+.box27{
+    width: 100%;
+    height: 100%;
+    background: url(../img/contact-us-xs.jpg) no-repeat center center /cover;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.box27 .inner{
+    width: 50%;
+
+    position: absolute;
+    left: 2.5%;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.box27 .box14 p, .box27 .box14 .cb{
+    color: white;
+    text-shadow:  1px  1px 0px black ,
+                -1px  1px 0px black ,
+                1px -1px 0px black ,
+                -1px -1px 0px black; 
+}
+
+
+/* --------------------------- */
+/*1.フェードインアニメーションの指定*/
+/* --------------------------- */
+
+.scrollanime {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;         
+    }
+    100% {
+    opacity: 1;
+    transform: translateY(-10px);
+    }
+}
+ 
+/*2.上下の動きを指定*/
+.updown {transform: translateY(-100px);}
+.downup {transform: translateY(100px);}
+
+
+/* ハンバーガー */
+
+.menu-btn{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  color: #fff;
+}
+
+
+
+.menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  opacity: 70%;
+}
+
+
+.menu__item{
+  width: 100%;
+  height: auto;
+  padding: .5em 1em;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+
+.menu{
+  transform: translateX(100vw);
+  transition: all 1.0s ease;
+}
+/* アニメーション後のメニューの状態 */
+.menu.is-active{
+  transform: translateX(0);
+}
+
+.menu div{
+    padding: .5em 1em;
+}
+
+
+.brpc{
+    display:block;
+}
+
+.brsp{
+    display: none;
+}
+
+/* レスポンシブ対応・・・？ */
+
+
+@media screen and (max-width: 1080px){ 
+
+.box04{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+}
+
+.box21 .leftup{
+    position: absolute;
+    top: 10%;
+    left: 2.5%;
+
+    width: 95%;
+    height: 75px;
+
+}
+
+.leftup img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+
+    width: 300px;
+    height: 80%;
+
+}
+
+.box21 .inner{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    
+    width: 90%;
+    height:0%
+
+}
+
+.box21 .title{
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Shippori Mincho', serif;
+    line-height: 60px;
+}
+
+.box21 .txt{
+    text-align: center;
+    font-size: 18px;    
+}
+
+/* -------- */
+/*  page-2  */
+/* -------- */
+
+.box22{
+    background: url(../img/about_03.jpg) no-repeat center center /cover;
+    background-position: 70% 0;
+    margin: 0 auto;
+}
+
+.box22 .left{
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 2.5%;
+    transform: translateY(-50%);
+}
+
+.box22 h1{
+    font-size: 24px;
+}
+
+.box22 h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    text-align: left;
+    font-size: 20px;
+}
+
+.box22 p{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-align: left;
+    font-size: 16px;
+ 
+}
+
+/* -------- */
+/*  page-3  */
+/* -------- */
+
+.box23{
+    background: url(../img/course_01.jpg) no-repeat center center /cover;
+}
+
+.box23 .inner{
+    position: absolute;
+    bottom: 20%;
+    left:2.5%;
+}
+
+.box23 h1{
+    color: #ffd61a;
+    text-align: left;
+    font-size: 24px;
+}
+
+.box23 h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    text-align: left;
+    font-size: 20px;
+}
+
+.box23 p{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-align: left;
+    font-size: 16px;
+}
+
+
+/* -------- */
+/*  page-4  */
+/* -------- */
+
+.box24{
+    background: url(../img/course_02.jpg) no-repeat center center /cover;
+    margin: 0 auto;
+}
+
+.box24 .inner{
+    position: absolute;
+    top:10%;
+    right:2.5%;
+
+}
+
+.box24 h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-align: left;
+    font-size: 24px;
+    
+}
+
+.box24 p{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-align: left;
+    font-size: 16px;
+}
+
+.box27 .inner{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+
+}
+
+.box27 .left{
+    width: 240px;
+    border-right: solid 1px #bfbfbf;
+    
+}
+
+.brpc{
+    display:block;
+}
+
+.brsp{
+    display: none;
+}
+
+}
+
+
+/* -------- */
+/* スマホ対応 */
+/* -------- */
+
+@media screen and (max-width: 720px){ 
+
+.box04{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+}
+
+.box21 .leftup{
+    position: absolute;
+    top: 10%;
+    left: 2.5%;
+
+    width: 95%;
+    height: 75px;
+
+}
+
+.leftup img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+
+    width: 300px;
+    height: 80%;
+
+}
+
+.box21 .inner{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    
+    width: 90%;
+    height:0%
+
+}
+
+.box21 .title{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Shippori Mincho', serif;
+    line-height: 60px;
+}
+
+.box21 .txt{
+    text-align: center;
+    font-size: 14px;    
+}
+
+/* -------- */
+/*  page-2  */
+/* -------- */
+
+.box22{
+    background: url(../img/about_03.jpg) no-repeat center center /cover;
+    background-position: 70% 0;
+    margin: 0 auto;
+}
+
+.box22 .left{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 2.5%;
+    transform: translateY(-50%);
+}
+
+.box22 h1{
+    font-size: 20px;
+}
+
+.box22 h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    text-align: left;
+    font-size: 16px;
+}
+
+.box22 p{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-align: left;
+    font-size: 12px;
+ 
+}
+
+/* -------- */
+/*  page-3  */
+/* -------- */
+
+.box23{
+    background: url(../img/course_01.jpg) no-repeat center center /cover;
+}
+
+.box23 .inner{
+    position: absolute;
+    bottom: 15%;
+    left:2.5%;
+}
+
+.box23 h1{
+    color: #ffd61a;
+    text-align: left;
+    font-size: 20px;
+}
+
+.box23 h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    text-align: left;
+    font-size: 16px;
+}
+
+.box23 p{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-align: left;
+    font-size: 12px;
+}
+
+
+/* -------- */
+/*  page-4  */
+/* -------- */
+
+.box24{
+    background: url(../img/course_02.jpg) no-repeat center center /cover;
+    margin: 0 auto;
+}
+
+.box24 .inner{
+    position: absolute;
+    top:5%;
+    right:2.5%;
+
+}
+
+.box24 h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-align: left;
+    font-size: 16px;
+    
+}
+
+.box24 p{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-align: left;
+    font-size: 12px;
+}
+
+.box27 .box14{
+    width: 400px;
+}
+
+.box27 .fbox{
+    width: 400px;
+}
+
+.box27 .left{
+    width: 180px;
+}
+
+.box27 .right{
+    width: 220px;
+}
+
+.box27 .itxt{
+    width: 200px;
+}
+
+.box27 .idetail{
+    width: 200px;
+}
+
+.brpc{
+    display:none;
+}
+
+.brsp{
+    display: block;
+}
+
+}

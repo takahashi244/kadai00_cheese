@@ -1,0 +1,770 @@
+/* ここから下に記載していく */
+
+/* 日本語用フォント */
+body {
+  font-family: "Roboto", "Zen Maru Gothic", "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  color: #222222;
+  /* 黒色を#222222に変更 */
+}
+
+
+/* 全体のスタイル設定 */
+h1 {
+  text-align: center;
+  font-size: 18px;
+  font-family: inherit;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+  font-family: inherit;
+}
+
+/* 全体のスタイルここまで */
+
+/* 全体のレイアウト調整 */
+.wrap {
+  width: 100%;
+  max-width: 1200px; /* 最大幅を設定 */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ヘッダーここから */
+.header {
+  position: fixed;
+  /* ヘッダーを固定 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  /* 他の要素より前面に表示 */
+  background-color: #fafafa;
+  /* 背景色 */
+  border: 1px solid #cacaca;
+  /* 枠線の色 */
+  font-size: 21px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  /* 左に50pxの余白 */
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.menu-list {
+  display: flex;
+  margin: 50px;
+  padding: 50;
+}
+
+.menu-list li {
+  margin-left: 50px;
+}
+
+.menu-list a {
+  text-decoration: none;
+  /* 下線を消す */
+  color: #222222;
+  /* 黒色を#222222に変更 */
+  font-size: 21px;
+  /* メニュー項目のフォントサイズも21pxに設定 */
+}
+
+/* ヘッダーここまで */
+
+/* トップイメージここから */
+.top-image {
+  width: 100%;
+  height: 450px;
+  /* 必要に応じて高さを調整 */
+  margin: 0 auto;
+  /* 中央揃え */
+  position: relative;
+  /* 子要素の絶対配置の基準にするためにrelativeを指定 */
+  margin-top: 120px;
+  /* ヘッダーの下に余白を作るためにマージンを追加 */
+}
+
+.top-image img {
+  width: 100%;
+  height: 100%;
+  /* 高さを500pxに設定 */
+  object-fit: cover;
+  /* 画像をコンテナにフィットさせる */
+}
+
+.top-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 1200px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.title01 {
+  text-align: center;
+  margin-top: 0px;
+  /* 上の余白を削除 */
+  margin-bottom: 30px;
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+}
+
+.title02 {
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  margin: 0px;
+}
+
+/* トップイメージここまで */
+
+/* aboutここから */
+.about {
+  display: inline-block;
+  /* テキストの長さに背景を合わせる */
+  font-size: 24px;
+  color: #ffd61a;
+  background-color: #fafafa;
+  /* グレー背景に変更 */
+  margin-top: 60px;
+  /* 上に余白を追加 */
+  margin-bottom: 30px;
+  /* テキストを中央揃いにする */
+  text-align: center;
+  /* 中央に配置するための設定 */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  /* コンテンツの幅に合わせる */
+}
+
+.about-title {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.about-text p {
+  margin-bottom: 40px;
+}
+
+/* aboutここまで */
+
+/* 4枚画像ここから */
+.image-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 80px;
+  /* ABOUTセクションとの間隔を80pxに設定 */
+}
+
+.image-section img {
+  width: 25%;
+  /* 4枚なので25%ずつ */
+  height: auto;
+  object-fit: cover;
+}
+
+/* 4枚画像ここまで */
+
+/* コースここから */
+.course {
+  margin-top: 60px;
+  /* 上に余白を追加 */
+  margin-bottom: 30px;
+}
+
+.course-text {
+  margin-top: 0%;
+  margin-bottom: 60px;
+}
+
+/* コースのスタイル修正 */
+.course-container {
+  width: 100%;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  /* 縦に並べる */
+}
+
+.course-item {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0;
+  /* 段間のマージンを削除 */
+}
+
+/* 2段目は逆向きに配置 */
+.course-item:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.course-image {
+  width: 50%;
+  flex: 0 0 50%;
+  /* 幅を厳密に50%に固定 */
+}
+
+.course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.course-content-right {
+  width: 50%;
+  flex: 0 0 50%;
+  /* 幅を厳密に50%に固定 */
+  background-color: #fafafa;
+  /* グレー背景 */
+  padding-left: 50px;
+  /* 左側に50pxの余白 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  /* パディングを含めた幅を50%にする */
+}
+
+.course-content-right h2 {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.course-content-right p {
+  text-align: left;
+  margin: 0;
+}
+
+.course-content-left {
+  width: 50%;
+  flex: 0 0 50%;
+  /* 幅を厳密に50%に固定 */
+  background-color: #fafafa;
+  /* グレー背景 */
+  padding-right: 50px;
+  /* 右側の余白を50pxに固定 */
+  padding-left: 110px;
+  /* 左側の余白を比率で設定 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  /* パディングを含めた幅を50%にする */
+  white-space: normal;
+  /* 改行はHTMLの<br>タグに従う */
+}
+
+.course-content-left h2 {
+  text-align: left;
+  margin-bottom: 40px;
+  white-space: normal;
+  /* 改行はHTMLの<br>タグに従う */
+}
+
+.course-content-left p {
+  text-align: left;
+  margin: 0;
+  white-space: normal;
+  /* 改行はHTMLの<br>タグに従う */
+}
+
+/* コースここまで */
+
+/* NEWSここから */
+.news {
+  display: inline-block;
+  /* テキストの長さに背景を合わせる */
+  font-size: 24px;
+  color: #ffd61a;
+  background-color: #fafafa;
+  /* グレー背景に変更 */
+  margin-top: 60px;
+  /* 上に余白を追加 */
+  margin-bottom: 30px;
+  /* テキストを中央揃いにする */
+  text-align: center;
+  /* 中央に配置するための設定 */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  /* コンテンツの幅に合わせる */
+}
+
+.news-title {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.news-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  /* 各NEWSアイテム間の間隔 */
+  flex-wrap: wrap;
+  /* 必要に応じて折り返し */
+  margin-bottom: 60px;
+}
+
+.news-item {
+  width: 300px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0.8;
+}
+
+.news-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.news-item:hover .news-image img {
+  transform: scale(1.10);
+}
+
+.news-date {
+  font-size: 14px;
+  padding-top: 30px;
+  padding-bottom: 24px;
+  margin: 0;
+  text-align: left;
+}
+
+.news-heading {
+  font-size: 14px;
+  margin: 0;
+  text-align: left;
+}
+
+.news-more {
+  display: block;
+  width: 300px;
+  height: 60px;
+  margin: 0 auto 60px;
+  background-color: #ffd61a;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 60px;
+  /* 高さに合わせて中央揃え */
+  text-decoration: none;
+  /* 下線を消す */
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.news-more:hover {
+  background-color: #e5c118;
+  transform: scale(1.10);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0.8;
+}
+
+/* NEWSここまで */
+
+/* ACCESSここから */
+.access-box {
+  background-color: #fafafa;
+  /* グレー背景 */
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+
+.access {
+  display: inline-block;
+  font-size: 24px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.access-container {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.access-map {
+  width: 100%;
+}
+
+.access-info-box {
+  background-color: #fafafa;
+  /* グレー背景 */
+  padding-top: 60px;
+  padding-bottom: 30px;
+  padding-left: 10%;
+  box-sizing: border-box;
+}
+
+.access-info {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.access-info dt {
+  width: 30%;
+  float: left;
+  clear: left;
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+.access-info dd {
+  width: 70%;
+  float: left;
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+/* ACCESSここまで */
+
+/* CONTACTここから */
+.contact-box {
+  padding: 60px 0;
+  margin-top: -60px;
+  /* 上に余白を追加 */
+}
+
+.contact {
+  display: inline-block;
+  margin-bottom: 30px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.contact-title {
+  margin: 0;
+}
+
+.contact-title p {
+  margin: 0;
+}
+
+.contact-content p {
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.contact-note {
+  margin: 0;
+  padding-bottom: 70px;
+}
+
+.contact-form {
+  width: 640px;
+  /* タイトル部分240px + フォームパーツ部分400px */
+  margin: 0 auto;
+  border-top: 2px solid #bfbfbf;
+  /* フォーム全体の上部の線 */
+}
+
+.form-group {
+  margin: 0;
+  display: flex;
+  align-items: stretch;
+  border-bottom: 2px solid #bfbfbf;
+  /* 各項目の下部の線 */
+}
+
+.form-group label.form-label {
+  width: 240px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 64px;
+  box-sizing: border-box;
+  position: relative;
+  /* 縦線のための基準 */
+  border-right: 2px solid #bfbfbf;
+  /* ラベルの右側の縦線 */
+}
+
+.form-input-area {
+  width: 405px;
+  padding-left: 8px;
+  padding-right: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+  width: 328px;
+  height: 36px;
+  border: 1px solid #bfbfbf;
+  border-radius: 0;
+  box-sizing: border-box;
+  padding: 0 8px;
+}
+
+.form-group textarea {
+  height: 150px;
+  padding: 8px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input {
+  margin-right: 8px;
+}
+
+.form-submit {
+  text-align: center;
+  margin-top: 30px;
+  /* 上に余白を追加 */
+  margin-bottom: 140px;
+  /* 下に余白を追加 */
+  border-top: none;
+}
+
+.submit-btn {
+  background-color: #ffd61a;
+  color: #fff;
+  border: none;
+  padding: 15px 60px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  width: 300px;
+  height: 60px;
+
+}
+
+.submit-btn:hover {
+  background-color: #e5c118;
+  transform: scale(1.05);
+}
+
+/* フッターここから */
+.footer {
+  background-color: #707070;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* フッターここまで */
+
+/* レスポンシブ対応のためのメディアクエリ */
+
+/* タブレット向けスタイル */
+@media screen and (max-width: 1024px) {
+  .wrap {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .header {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+  
+  .course-content-left,
+  .course-content-right {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .news-container {
+    padding: 0 20px;
+  }
+  
+  .access-info {
+    width: 90%;
+  }
+  
+  .contact-form {
+    width: 90%;
+    max-width: 640px;
+  }
+}
+
+/* スマートフォン向けスタイル */
+@media screen and (max-width: 767px) {
+  /* ヘッダー調整 */
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    margin: 20px 0;
+  }
+  
+  .menu-list {
+    margin: 0 0 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .menu-list li {
+    margin: 10px 15px;
+  }
+  
+  /* トップイメージ調整 */
+  .top-image {
+    margin-top: 200px;
+    height: 300px;
+  }
+  
+  .title01 {
+    font-size: 32px;
+  }
+  
+  .title02 {
+    font-size: 24px;
+  }
+  
+  /* コース調整 */
+  .course-item,
+  .course-item:nth-child(2) {
+    flex-direction: column;
+  }
+  
+  .course-image,
+  .course-content-left,
+  .course-content-right {
+    width: 100%;
+  }
+  
+  /* ニュース調整 */
+  .news-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* フォーム調整 */
+  .form-group {
+    flex-direction: column;
+  }
+  
+  .form-group label.form-label {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #bfbfbf;
+    padding: 10px 0;
+  }
+  
+  .form-input-area {
+    width: 100%;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+  }
+  
+  /* 4枚の画像セクション */
+  .image-section {
+    flex-wrap: wrap;
+  }
+  
+  .image-section img {
+    width: 50%;
+  }
+}
+
+/* 小さいスマートフォン向けスタイル */
+@media screen and (max-width: 480px) {
+  .title01 {
+    font-size: 24px;
+  }
+  
+  .title02 {
+    font-size: 18px;
+  }
+  
+  .image-section img {
+    width: 100%;
+  }
+  
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+/* 画像の最大幅と高さの自動調整 */
+img {
+  max-width: 100%;
+  height: auto;
+}
